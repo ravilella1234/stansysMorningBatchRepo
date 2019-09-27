@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTest 
@@ -32,10 +33,14 @@ public class BaseTest
 	{
 		if(p.getProperty(browser).equals("chrome"))
 		{
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\jars\\chromedriver.exe");
+			System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, projectPath+"//drivers//chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		else if(p.getProperty(browser).equals("firefox"))
 		{
+			//System.setProperty("webdriver.gecko.driver", "C:\\Users\\DELL\\Desktop\\jars\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", projectPath+"//drivers//geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
 		else
@@ -46,7 +51,8 @@ public class BaseTest
 	
 	public static void navigateUrl(String url)
 	{
-		driver.get(p.getProperty(url));
+		//driver.get(p.getProperty(url));
+		driver.navigate().to(p.getProperty(url));
 	}
 
 }
