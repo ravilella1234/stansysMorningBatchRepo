@@ -3,6 +3,7 @@ package com.launchers;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,14 +11,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class BaseTest 
 {
 	public static WebDriver driver;
 	public static String projectPath=System.getProperty("user.dir");
 	public static String dataPath=projectPath+"//data.properties";
 	public static String orPath=projectPath+"//or.properties";
+	public static String log4jPath=projectPath+"//log4j.properties";
 	public static Properties p;
 	public static Properties or;
+	
+	public static ExtentReports report=ExtentManager.getInstance();
+	public static ExtentTest test;
 	
 	public static void init()
 	{
@@ -30,6 +38,11 @@ public class BaseTest
 			FileInputStream fis1=new FileInputStream(orPath);
 			or=new Properties();
 			or.load(fis1);
+			
+			FileInputStream fis2=new FileInputStream(log4jPath);
+			PropertyConfigurator.configure(fis2);
+			
+			
 			
 		} 
 		catch (Exception e) 
