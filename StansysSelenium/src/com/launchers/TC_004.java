@@ -1,7 +1,5 @@
 package com.launchers;
 
-import org.apache.log4j.Logger;
-
 import com.relevantcodes.extentreports.LogStatus;
 
 public class TC_004 extends BaseTest
