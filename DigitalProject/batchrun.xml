@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeSuite">
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.project.DigitalProject.LinksTesting1"/>
+      <class name="com.project.DigitalProject.CheckBox1"/>
+      <class name="com.project.DigitalProject.RadioButton1"/>
+      <class name="com.project.DigitalProject.TC_003"/>
+     <!--   <class name="com.project.DigitalProject.TC_001"/>
+      <class name="com.project.DigitalProject.TC_002"/>-->
+    </classes>
+  </test> <!-- SmokeTest -->
+  
+  <test thread-count="5" name="FirefoxTest">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.project.DigitalProject.LinksTesting1"/>
+      <class name="com.project.DigitalProject.CheckBox1"/>
+      <class name="com.project.DigitalProject.RadioButton1"/>
+      <class name="com.project.DigitalProject.TC_003"/>
+     <!--   <class name="com.project.DigitalProject.TC_001"/>
+      <class name="com.project.DigitalProject.TC_002"/>-->
+    </classes>
+  </test> <!-- SmokeTest -->
+  
+</suite> <!-- SmokeSuite -->
