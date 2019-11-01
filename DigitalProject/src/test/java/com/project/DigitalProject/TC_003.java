@@ -12,7 +12,7 @@ public class TC_003 extends BaseTest
 {
 	
   
-  @BeforeMethod
+  @BeforeMethod(groups= {"regression","sanity"})
   @Parameters("browser")
   public void startProcess(String bType) 
   {
@@ -31,7 +31,7 @@ public class TC_003 extends BaseTest
   }
   
   
-  @Test
+  @Test(groups= {"regression","sanity"})
   public void amazon() 
   {
 	  System.out.println("amazon Test");
@@ -47,7 +47,7 @@ public class TC_003 extends BaseTest
 		test.log(LogStatus.INFO, "Clicked on element by using the locator :- " + or.getProperty("amazonsearchbutton_xpath"));
   }
 
-  @AfterMethod
+  @AfterMethod(groups= {"regression","sanity"})
   public void endProcess() 
   {
 	  System.out.println("endprocess");

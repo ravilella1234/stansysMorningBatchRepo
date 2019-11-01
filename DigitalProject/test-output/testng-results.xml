@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[Clicked on Image Link]]>
     </line>
-    <line>
-      <![CDATA[Clicked on Image Link]]>
-    </line>
   </reporter-output>
-  <suite name="SmokeSuite" duration-ms="127210" started-at="2019-10-31T05:20:06Z" finished-at="2019-10-31T05:22:13Z">
+  <suite name="RegressionSuite" duration-ms="58171" started-at="2019-11-01T05:09:03Z" finished-at="2019-11-01T05:10:01Z">
     <groups>
+      <group name="regression">
+        <method signature="CheckBox1.checkboxTest()[pri:0, instance:com.project.DigitalProject.CheckBox1@6b9651f3]" name="checkboxTest" class="com.project.DigitalProject.CheckBox1"/>
+        <method signature="LinksTesting1.linktesting1()[pri:0, instance:com.project.DigitalProject.LinksTesting1@687080dc]" name="linktesting1" class="com.project.DigitalProject.LinksTesting1"/>
+        <method signature="RadioButton1.checkboxTest()[pri:0, instance:com.project.DigitalProject.RadioButton1@38bc8ab5]" name="checkboxTest" class="com.project.DigitalProject.RadioButton1"/>
+        <method signature="TC_003.amazon()[pri:0, instance:com.project.DigitalProject.TC_003@5bb21b69]" name="amazon" class="com.project.DigitalProject.TC_003"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CheckBox1.checkboxTest()[pri:0, instance:com.project.DigitalProject.CheckBox1@6b9651f3]" name="checkboxTest" class="com.project.DigitalProject.CheckBox1"/>
+        <method signature="RadioButton1.checkboxTest()[pri:0, instance:com.project.DigitalProject.RadioButton1@38bc8ab5]" name="checkboxTest" class="com.project.DigitalProject.RadioButton1"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TC_003.amazon()[pri:0, instance:com.project.DigitalProject.TC_003@5bb21b69]" name="amazon" class="com.project.DigitalProject.TC_003"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="ChromeTest" duration-ms="49475" started-at="2019-10-31T05:20:06Z" finished-at="2019-10-31T05:20:55Z">
+    <test name="RegressionTest" duration-ms="58171" started-at="2019-11-01T05:09:03Z" finished-at="2019-11-01T05:10:01Z">
       <class name="com.project.DigitalProject.LinksTesting1">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.project.DigitalProject.LinksTesting1@3e57cd70]" name="setup" is-config="true" duration-ms="9829" started-at="2019-10-31T05:20:06Z" finished-at="2019-10-31T05:20:16Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.project.DigitalProject.LinksTesting1@687080dc]" name="setup" is-config="true" duration-ms="5809" started-at="2019-11-01T05:09:52Z" finished-at="2019-11-01T05:09:58Z">
           <params>
             <param index="0">
               <value>
@@ -24,20 +34,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="linktesting1()[pri:0, instance:com.project.DigitalProject.LinksTesting1@3e57cd70]" name="linktesting1" duration-ms="2478" started-at="2019-10-31T05:20:16Z" finished-at="2019-10-31T05:20:18Z">
+        <test-method status="PASS" signature="linktesting1()[pri:0, instance:com.project.DigitalProject.LinksTesting1@687080dc]" name="linktesting1" duration-ms="1680" started-at="2019-11-01T05:09:58Z" finished-at="2019-11-01T05:10:00Z">
           <reporter-output>
             <line>
               <![CDATA[Clicked on Image Link]]>
             </line>
           </reporter-output>
         </test-method> <!-- linktesting1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.DigitalProject.LinksTesting1@3e57cd70]" name="tearDown" is-config="true" duration-ms="1614" started-at="2019-10-31T05:20:18Z" finished-at="2019-10-31T05:20:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.DigitalProject.LinksTesting1@687080dc]" name="tearDown" is-config="true" duration-ms="933" started-at="2019-11-01T05:10:00Z" finished-at="2019-11-01T05:10:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.project.DigitalProject.LinksTesting1 -->
       <class name="com.project.DigitalProject.CheckBox1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.DigitalProject.CheckBox1@9a7504c]" name="beforeMethod" is-config="true" duration-ms="10849" started-at="2019-10-31T05:20:20Z" finished-at="2019-10-31T05:20:31Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.DigitalProject.CheckBox1@6b9651f3]" name="beforeMethod" is-config="true" duration-ms="10433" started-at="2019-11-01T05:09:28Z" finished-at="2019-11-01T05:09:39Z">
           <params>
             <param index="0">
               <value>
@@ -48,17 +58,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.DigitalProject.CheckBox1@9a7504c]" name="checkboxTest" duration-ms="179" started-at="2019-10-31T05:20:31Z" finished-at="2019-10-31T05:20:31Z">
+        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.DigitalProject.CheckBox1@6b9651f3]" name="checkboxTest" duration-ms="473" started-at="2019-11-01T05:09:39Z" finished-at="2019-11-01T05:09:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.DigitalProject.CheckBox1@9a7504c]" name="afterMethod" is-config="true" duration-ms="1062" started-at="2019-10-31T05:20:31Z" finished-at="2019-10-31T05:20:32Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.DigitalProject.CheckBox1@6b9651f3]" name="afterMethod" is-config="true" duration-ms="1876" started-at="2019-11-01T05:09:39Z" finished-at="2019-11-01T05:09:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.project.DigitalProject.CheckBox1 -->
       <class name="com.project.DigitalProject.RadioButton1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.DigitalProject.RadioButton1@2c039ac6]" name="beforeMethod" is-config="true" duration-ms="9098" started-at="2019-10-31T05:20:32Z" finished-at="2019-10-31T05:20:41Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.DigitalProject.RadioButton1@38bc8ab5]" name="beforeMethod" is-config="true" duration-ms="9408" started-at="2019-11-01T05:09:41Z" finished-at="2019-11-01T05:09:50Z">
           <params>
             <param index="0">
               <value>
@@ -69,17 +79,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.DigitalProject.RadioButton1@2c039ac6]" name="checkboxTest" duration-ms="212" started-at="2019-10-31T05:20:41Z" finished-at="2019-10-31T05:20:41Z">
+        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.DigitalProject.RadioButton1@38bc8ab5]" name="checkboxTest" duration-ms="383" started-at="2019-11-01T05:09:50Z" finished-at="2019-11-01T05:09:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.DigitalProject.RadioButton1@2c039ac6]" name="afterMethod" is-config="true" duration-ms="1013" started-at="2019-10-31T05:20:41Z" finished-at="2019-10-31T05:20:42Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.DigitalProject.RadioButton1@38bc8ab5]" name="afterMethod" is-config="true" duration-ms="1377" started-at="2019-11-01T05:09:51Z" finished-at="2019-11-01T05:09:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.project.DigitalProject.RadioButton1 -->
       <class name="com.project.DigitalProject.TC_003">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.DigitalProject.TC_003@587d1d39]" name="startProcess" is-config="true" duration-ms="7773" started-at="2019-10-31T05:20:42Z" finished-at="2019-10-31T05:20:50Z">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.DigitalProject.TC_003@5bb21b69]" name="startProcess" is-config="true" duration-ms="12573" started-at="2019-11-01T05:09:03Z" finished-at="2019-11-01T05:09:15Z">
           <params>
             <param index="0">
               <value>
@@ -90,104 +100,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.DigitalProject.TC_003@587d1d39]" name="amazon" duration-ms="4285" started-at="2019-10-31T05:20:50Z" finished-at="2019-10-31T05:20:54Z">
+        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.DigitalProject.TC_003@5bb21b69]" name="amazon" duration-ms="7489" started-at="2019-11-01T05:09:15Z" finished-at="2019-11-01T05:09:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.DigitalProject.TC_003@587d1d39]" name="endProcess" is-config="true" duration-ms="1022" started-at="2019-10-31T05:20:54Z" finished-at="2019-10-31T05:20:55Z">
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.DigitalProject.TC_003@5bb21b69]" name="endProcess" is-config="true" duration-ms="5680" started-at="2019-11-01T05:09:23Z" finished-at="2019-11-01T05:09:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endProcess -->
       </class> <!-- com.project.DigitalProject.TC_003 -->
-    </test> <!-- ChromeTest -->
-    <test name="FirefoxTest" duration-ms="77697" started-at="2019-10-31T05:20:55Z" finished-at="2019-10-31T05:22:13Z">
-      <class name="com.project.DigitalProject.LinksTesting1">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.project.DigitalProject.LinksTesting1@1a3869f4]" name="setup" is-config="true" duration-ms="11728" started-at="2019-10-31T05:20:55Z" finished-at="2019-10-31T05:21:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="linktesting1()[pri:0, instance:com.project.DigitalProject.LinksTesting1@1a3869f4]" name="linktesting1" duration-ms="1398" started-at="2019-10-31T05:21:07Z" finished-at="2019-10-31T05:21:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked on Image Link]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- linktesting1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.project.DigitalProject.LinksTesting1@1a3869f4]" name="tearDown" is-config="true" duration-ms="6888" started-at="2019-10-31T05:21:09Z" finished-at="2019-10-31T05:21:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.project.DigitalProject.LinksTesting1 -->
-      <class name="com.project.DigitalProject.CheckBox1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.DigitalProject.CheckBox1@a38d7a3]" name="beforeMethod" is-config="true" duration-ms="13350" started-at="2019-10-31T05:21:15Z" finished-at="2019-10-31T05:21:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.DigitalProject.CheckBox1@a38d7a3]" name="checkboxTest" duration-ms="409" started-at="2019-10-31T05:21:29Z" finished-at="2019-10-31T05:21:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.DigitalProject.CheckBox1@a38d7a3]" name="afterMethod" is-config="true" duration-ms="2807" started-at="2019-10-31T05:21:29Z" finished-at="2019-10-31T05:21:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.project.DigitalProject.CheckBox1 -->
-      <class name="com.project.DigitalProject.RadioButton1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.DigitalProject.RadioButton1@77f99a05]" name="beforeMethod" is-config="true" duration-ms="13896" started-at="2019-10-31T05:21:32Z" finished-at="2019-10-31T05:21:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.DigitalProject.RadioButton1@77f99a05]" name="checkboxTest" duration-ms="429" started-at="2019-10-31T05:21:46Z" finished-at="2019-10-31T05:21:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.DigitalProject.RadioButton1@77f99a05]" name="afterMethod" is-config="true" duration-ms="2834" started-at="2019-10-31T05:21:46Z" finished-at="2019-10-31T05:21:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.project.DigitalProject.RadioButton1 -->
-      <class name="com.project.DigitalProject.TC_003">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.DigitalProject.TC_003@63440df3]" name="startProcess" is-config="true" duration-ms="13806" started-at="2019-10-31T05:21:49Z" finished-at="2019-10-31T05:22:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.DigitalProject.TC_003@63440df3]" name="amazon" duration-ms="4739" started-at="2019-10-31T05:22:03Z" finished-at="2019-10-31T05:22:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.DigitalProject.TC_003@63440df3]" name="endProcess" is-config="true" duration-ms="5398" started-at="2019-10-31T05:22:08Z" finished-at="2019-10-31T05:22:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.project.DigitalProject.TC_003 -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- SmokeSuite -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- RegressionSuite -->
 </testng-results>

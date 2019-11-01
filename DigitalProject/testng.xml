@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="RegressionSuite">
+
   <test thread-count="5" name="RegressionTest">
+  <parameter name="browser" value="chrome"></parameter>
+  <groups>
+  	<run>
+  		<include name="regression"></include>
+  	</run>
+  </groups>
+  
     <classes>
       <class name="com.project.DigitalProject.TC_003"/>
-      <class name="com.project.DigitalProject.TC_001"/>
-      <class name="com.project.DigitalProject.TC_002"/>
-      <class name="com.project.DigitalProject.BaseTest"/>
+      <class name="com.project.DigitalProject.CheckBox1"/>
+      <class name="com.project.DigitalProject.RadioButton1"/>
+      <class name="com.project.DigitalProject.LinksTesting1"/>
     </classes>
   </test> <!-- RegressionTest -->
 </suite> <!-- RegressionSuite -->
