@@ -8,14 +8,33 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">RegressionSuite</th></tr>
-<tr><td><a href="#t0">RegressionTest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">58,171</td><td>regression</td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">17,498</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.project.DigitalProject.CheckBox1</td><td><a href="#m0">checkboxTest</a></td><td rowspan="1">1572584979227</td><td rowspan="1">473</td></tr><tr class="passedodd"><td rowspan="1">com.project.DigitalProject.LinksTesting1</td><td><a href="#m1">linktesting1</a></td><td rowspan="1">1572584998561</td><td rowspan="1">1680</td></tr><tr class="passedeven"><td rowspan="1">com.project.DigitalProject.RadioButton1</td><td><a href="#m2">checkboxTest</a></td><td rowspan="1">1572584990988</td><td rowspan="1">383</td></tr><tr class="passedodd"><td rowspan="1">com.project.DigitalProject.TC_003</td><td><a href="#m3">amazon</a></td><td rowspan="1">1572584955618</td><td rowspan="1">7489</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.project.DigitalProject.TC_003</td><td><a href="#m0">amazon</a></td><td rowspan="1">1572932490245</td><td rowspan="1">1300</td></tr></tbody>
 </table>
-<h2>RegressionTest</h2><h3 id="m0">com.project.DigitalProject.CheckBox1#checkboxTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.project.DigitalProject.LinksTesting1#linktesting1</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Clicked on Image Link</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.project.DigitalProject.RadioButton1#checkboxTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.project.DigitalProject.TC_003#amazon</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.project.DigitalProject.TC_003#amazon</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test started Running:amazon<br/><a href='C:\Users\DELL\git\stansysMorningBatchRepo\DigitalProject//failure//Tue_Nov_05_11_11_16_IST_2019.png'> <img src='C:\Users\DELL\git\stansysMorningBatchRepo\DigitalProject//failure//Tue_Nov_05_11_11_16_IST_2019.png' height='100' width='100'/> </a><br/>Test has Failed:amazon</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;field-keyword&apos;]&quot;}
+  (Session info: chrome=78.0.3904.87)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;DESKTOP-AA4AD8I&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53253}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c07d826a6911ba8ece384f531c0b5e25
+*** Element info: {Using=name, value=field-keyword}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:395)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at com.project.DigitalProject.BaseTest.getElement(BaseTest.java:102)
+	at com.project.DigitalProject.BaseTest.typeValue(BaseTest.java:127)
+	at com.project.DigitalProject.TC_003.amazon(TC_003.java:42)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
