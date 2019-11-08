@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.DigitalProject.TestDependency">
+      <class name="com.excelOperations.FaceBook">
         <methods>
-          <include name="orange"/>
-          <include name="white"/>
-          <include name="green"/>
-          <include name="blue"/>
+          <include name="startProcess"/>
+          <include name="fb"/>
+          <include name="endProcess"/>
         </methods>
-      </class> <!-- com.project.DigitalProject.TestDependency -->
+      </class> <!-- com.excelOperations.FaceBook -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
