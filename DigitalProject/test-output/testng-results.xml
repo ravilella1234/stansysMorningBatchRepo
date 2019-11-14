@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="24452" started-at="2019-11-08T05:17:13Z" finished-at="2019-11-08T05:17:38Z">
+  <suite name="Suite" duration-ms="25673" started-at="2019-11-14T05:02:36Z" finished-at="2019-11-14T05:03:02Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="24452" started-at="2019-11-08T05:17:13Z" finished-at="2019-11-08T05:17:38Z">
-      <class name="com.excelOperations.FaceBook">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.excelOperations.FaceBook@7a9273a8]" name="startProcess" is-config="true" duration-ms="10059" started-at="2019-11-08T05:17:13Z" finished-at="2019-11-08T05:17:24Z">
+    <test name="Test" duration-ms="25673" started-at="2019-11-14T05:02:36Z" finished-at="2019-11-14T05:03:02Z">
+      <class name="com.pageobjectmodel.LoginTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.pageobjectmodel.LoginTest@7a9273a8]" name="beforeTest" is-config="true" duration-ms="19926" started-at="2019-11-14T05:02:36Z" finished-at="2019-11-14T05:02:56Z">
           <params>
             <param index="0">
               <value>
@@ -17,16 +17,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="fb()[pri:0, instance:com.excelOperations.FaceBook@7a9273a8]" name="fb" duration-ms="14349" started-at="2019-11-08T05:17:24Z" finished-at="2019-11-08T05:17:38Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.pageobjectmodel.LoginTest@7a9273a8]" name="f" duration-ms="5686" started-at="2019-11-14T05:02:56Z" finished-at="2019-11-14T05:03:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fb -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.excelOperations.FaceBook@7a9273a8]" name="endProcess" is-config="true" duration-ms="0" started-at="2019-11-08T05:17:38Z" finished-at="2019-11-08T05:17:38Z">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pageobjectmodel.LoginTest@7a9273a8]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-11-14T05:03:02Z" finished-at="2019-11-14T05:03:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.excelOperations.FaceBook -->
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.pageobjectmodel.LoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

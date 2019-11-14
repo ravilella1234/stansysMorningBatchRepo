@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.excelOperations.FaceBook">
+      <class name="com.pageobjectmodel.LoginTest">
         <methods>
-          <include name="startProcess"/>
-          <include name="fb"/>
-          <include name="endProcess"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.excelOperations.FaceBook -->
+      </class> <!-- com.pageobjectmodel.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
