@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -16,6 +18,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -90,6 +94,7 @@ public class BaseTest
 		//driver.get(p.getProperty(url));
 		driver.navigate().to(p.getProperty(url));
 		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 	
 	public static WebElement getElement(String locatorKey)
@@ -190,6 +195,20 @@ public class BaseTest
 	public static void closeBrowser()
 	{
 		driver.quit();
+	}
+	
+	
+	public static void waitForElement(WebElement element,long timeUnits)
+	{
+		WebDriverWait wait=new WebDriverWait(driver, timeUnits);
+		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+	}
+	
+	
+	public int ranNumber() 
+	{
+		Random r=new Random();
+		return r.nextInt(999999);
 	}
 	
 

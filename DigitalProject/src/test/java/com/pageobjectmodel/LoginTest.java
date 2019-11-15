@@ -1,8 +1,8 @@
 package com.pageobjectmodel;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -12,7 +12,7 @@ public class LoginTest extends BaseTest
 {
 	LoginPage page;
   
-  @BeforeTest
+  @BeforeMethod
   @Parameters("browser")
   public void beforeTest(String btype) 
   {
@@ -22,21 +22,26 @@ public class LoginTest extends BaseTest
   }
   
   
-  @Test
-  public void f() 
+  @Test(priority=1)
+  public void login() 
   {
-	 
 	  page=new LoginPage(driver);
-	  page.login();
-	  
-	  Assert.assertEquals(page.verifyLoginError(), "Authentication failed.");
-	  
+	  page.login();  
+	  Assert.assertEquals(page.verifyLoginError(), "Authentication failed."); 
+  }
+  
+ 
+  @Test(priority=2)
+  public void registration() throws InterruptedException
+  {
+	  page=new LoginPage(driver);
+	  page.customerRegistration();
   }
 
-  @AfterTest
+  @AfterMethod
   public void afterTest() 
   {
-	  
+	  driver.quit();
   }
 
 }
