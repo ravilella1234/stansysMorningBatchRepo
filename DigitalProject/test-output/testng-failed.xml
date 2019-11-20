@@ -4,13 +4,12 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pageobjectmodel.LoginTest">
+      <class name="com.frames.FrameDemo1">
         <methods>
-          <include name="afterTest"/>
-          <include name="registration"/>
-          <include name="beforeTest"/>
+          <include name="javadocs"/>
+          <include name="startProcess"/>
         </methods>
-      </class> <!-- com.pageobjectmodel.LoginTest -->
+      </class> <!-- com.frames.FrameDemo1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pageobjectmodel.LoginTest">
+      <class name="com.frames.FrameDemo1">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="f"/>
+          <include name="frameDemo1"/>
+          <include name="startProcess"/>
         </methods>
-      </class> <!-- com.pageobjectmodel.LoginTest -->
+      </class> <!-- com.frames.FrameDemo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
